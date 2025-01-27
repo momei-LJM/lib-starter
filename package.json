@@ -20,6 +20,8 @@
     "scripts": {
         "dev": "pnpm -C playground dev",
         "build": "vite build",
+        "pub": "npm version patch && npm publish",
+        "prepublishOnly": "pnpm build",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix"
