@@ -1,5 +1,5 @@
 {
-    "name": "lib-starter",
+    "name": "momei-lib-starter",
     "type": "module",
     "version": "1.0.0",
     "description": "starter for lib&vite",
