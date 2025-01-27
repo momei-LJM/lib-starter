@@ -13,7 +13,8 @@
         ".": {
             "import": "./dist/momei-index.es.js",
             "require": "./dist/momei-index.es.js"
-        }
+        },
+        "./css": "./dist/momei-style.css"
     },
     "main": "./src/components/index.ts",
     "scripts": {
