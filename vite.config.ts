@@ -8,11 +8,13 @@ export default defineConfig({
     rollupOptions: {
       external: ["vue"],
       output: {
+        exports: "named",
         globals: {
           vue: "Vue",
         },
       },
     },
+
     lib: {
       name: "momei",
       entry: ["./src/components/index.ts"],

@@ -1,47 +1,49 @@
 {
-    "name": "momei-lib-starter",
-    "type": "module",
-    "version": "1.0.5",
-    "description": "starter for lib&vite",
-    "author": "momei",
-    "license": "ISC",
-    "files": [
-        "dist",
-        "package.json"
-    ],
-    "exports": {
-        ".": {
-            "import": "./dist/momei-index.es.js",
-            "require": "./dist/momei-index.es.js"
-        },
-        "./css": "./dist/momei-style.css"
+  "name": "momei-lib-starter",
+  "type": "module",
+  "version": "1.0.5",
+  "description": "starter for lib&vite",
+  "author": "momei",
+  "license": "ISC",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/momei-index.es.js",
+      "require": "./dist/momei-index.es.js"
     },
-    "main": "./src/components/index.ts",
-    "scripts": {
-        "dev": "pnpm -C playground dev",
-        "build": "vite build",
-        "pub": "npm version patch && npm publish",
-        "prepublishOnly": "pnpm build",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "lint": "eslint .",
-        "lint:fix": "eslint . --fix"
-    },
-    "peerDependencies": {
-        "vue": "^3.5.13"
-    },
-    "devDependencies": {
-        "@antfu/eslint-config": "^4.1.0",
-        "@types/node": "^22.10.10",
-        "@vitejs/plugin-vue": "^5.2.1",
-        "@vitejs/plugin-vue-jsx": "^4.1.1",
-        "@vue/tsconfig": "^0.7.0",
-        "eslint": "^9.19.0",
-        "eslint-config-prettier": "^10.0.1",
-        "prettier": "3.4.2",
-        "sass": "^1.83.4",
-        "typescript": "^5.7.3",
-        "unocss": "^65.4.3",
-        "vite": "^6.0.11",
-        "vue": "^3.5.13"
-    }
+    "./css": "./dist/momei-style.css"
+  },
+  "main": "./src/components/index.ts",
+  "scripts": {
+    "dev": "pnpm -C playground dev",
+    "build": "vite build && pnpm build:dts",
+    "pub": "npm version patch && npm publish",
+    "prepublishOnly": "pnpm build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "build:dts": "vue-tsc --declaration --emitDeclarationOnly --declarationDir dist/types",
+    "lint:fix": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.1.0",
+    "@types/node": "^22.10.10",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "@vue/tsconfig": "^0.7.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "3.4.2",
+    "sass": "^1.83.4",
+    "typescript": "^5.7.3",
+    "unocss": "^65.4.3",
+    "vite": "^6.0.11",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.0"
+  }
 }

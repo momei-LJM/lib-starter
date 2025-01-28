@@ -1,23 +1,26 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
     "target": "ESNext",
     "lib": ["ESNext", "DOM"],
     "useDefineForClassFields": true,
     "rootDir": ".",
+    "declarationDir": "./dist/types",
     "module": "ESNext",
     "moduleResolution": "Node",
     "paths": {
-      "@/*": ["./src/*"],
-      "momei-lib-starter": ["./dist/momei-index.es.js"],
-      "momei-lib-starter/css": ["./dist/momei-style.css"]
+      "@/*": ["./src/*"]
     },
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "resolveJsonModule": true,
     "types": ["vite/client", "node"],
     "strict": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noEmit": true,
+    // "noEmit": true,
     "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
