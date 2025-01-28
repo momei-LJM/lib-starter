@@ -12,6 +12,7 @@ export default defineConfig({
             cssFileName: 'momei-style',
         },
         outDir: 'dist',
+        minify: false,
     },
 
     plugins: [vue(), vueJsx({}), UnoCSS()],
