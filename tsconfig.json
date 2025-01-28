@@ -7,7 +7,9 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "momei-lib-starter": ["./dist/momei-index.es.js"],
+      "momei-lib-starter/css": ["./dist/momei-style.css"]
     },
     "resolveJsonModule": true,
     "types": ["vite/client", "node"],
