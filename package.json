@@ -9,7 +9,7 @@
     "dist",
     "package.json"
   ],
-  "types": "./types/src/components/index.d.ts",
+  "types": "./dist/types/src/components/index.d.ts",
   "exports": {
     "./global": "./dist/global.d.ts",
     ".": {
