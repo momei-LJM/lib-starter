@@ -1,7 +1,7 @@
 {
   "name": "momei-lib-starter",
   "type": "module",
-  "version": "1.0.7",
+  "version": "1.0.6",
   "description": "starter for lib&vite",
   "author": "momei",
   "license": "ISC",
@@ -11,12 +11,12 @@
   ],
   "types": "./types/src/components/index.d.ts",
   "exports": {
-    "./global": "./global.d.ts",
+    "./global": "./dist/global.d.ts",
     ".": {
-      "import": "./es/components/index.js",
-      "require": "./lib/components/index.js"
+      "import": "./dist/es/components/index.js",
+      "require": "./dist/lib/components/index.js"
     },
-    "./css": "./es/momei-style.css"
+    "./css": "./dist/es/momei-style.css"
   },
   "main": "./src/components/index.ts",
   "scripts": {
