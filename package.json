@@ -9,17 +9,18 @@
     "dist",
     "package.json"
   ],
+  "types": "./dist/types/src/components/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/momei-index.es.js",
-      "require": "./dist/momei-index.es.js"
+      "import": "./dist/es/components",
+      "require": "./dist/lib/components"
     },
-    "./css": "./dist/momei-style.css"
+    "./css": "./dist/es/momei-style.css"
   },
   "main": "./src/components/index.ts",
   "scripts": {
     "dev": "pnpm -C playground dev",
-    "build": "vite build && pnpm build:dts",
+    "build": "npx tsx ./build.ts",
     "pub": "npm version patch && npm publish",
     "prepublishOnly": "pnpm build",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -32,14 +33,18 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.1.0",
+    "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.10.10",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vitejs/plugin-vue-jsx": "^4.1.1",
     "@vue/tsconfig": "^0.7.0",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
+    "execa": "^9.5.2",
+    "fs-extra": "^11.3.0",
     "prettier": "3.4.2",
     "sass": "^1.83.4",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.3",
     "unocss": "^65.4.3",
     "vite": "^6.0.11",

@@ -1,6 +1,6 @@
-import Test from './test/index.vue'
-import 'virtual:uno.css'
+import Test from "./test/index.vue";
+import "virtual:uno.css";
 
-export const TestComponent = Test
+export const TestComponent = Test;
 
-export default { TestComponent }
+export default { TestComponent };
