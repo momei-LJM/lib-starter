@@ -13,10 +13,15 @@
   "exports": {
     "./global": "./dist/global.d.ts",
     ".": {
+      "types": "./dist/types/src/components/index.d.ts",
       "import": "./dist/es/components/index.js",
       "require": "./dist/lib/components/index.js"
     },
-    "./css": "./dist/es/momei-style.css"
+    "./css": {
+      "types": "./dist/global.d.ts",
+      "import": "./dist/es/momei-style.css",
+      "require": "./dist/es/momei-style.css"
+    }
   },
   "main": "./src/components/index.ts",
   "scripts": {
