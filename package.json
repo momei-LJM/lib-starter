@@ -15,7 +15,8 @@
     ".": {
       "types": "./dist/types/src/components/index.d.ts",
       "import": "./dist/es/components/index.js",
-      "require": "./dist/lib/components/index.js"
+      "require": "./dist/lib/components/index.js",
+      "default": "./dist/es/components/index.js"
     },
     "./css": {
       "types": "./dist/global.d.ts",
@@ -23,7 +24,8 @@
       "require": "./dist/es/momei-style.css"
     }
   },
-  "main": "./src/components/index.ts",
+  "main": "./dist/lib/components/index.js",
+  "module": "./dist/es/components/index.js",
   "scripts": {
     "dev": "pnpm -C playground dev",
     "build": "npx tsx ./build.ts",
