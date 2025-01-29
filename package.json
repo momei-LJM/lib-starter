@@ -1,7 +1,7 @@
 {
   "name": "momei-lib-starter",
   "type": "module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "starter for lib&vite",
   "author": "momei",
   "license": "ISC",
