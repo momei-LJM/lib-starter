@@ -1,7 +1,7 @@
-declare module "momei-lib-starter/css";
+declare module "lib-starter-components/css";
 declare module "vue" {
   export interface GlobalComponents {
-    TestComponent: (typeof import("momei-lib-starter"))["TestComponent"];
+    TestComponent: (typeof import("lib-starter-components"))["TestComponent"];
   }
 }
 

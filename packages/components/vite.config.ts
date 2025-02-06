@@ -6,13 +6,13 @@ import { defineConfig } from "vite";
 const isVueSFC = (id: string) => {
   return /\.([tj]sx)|(vue)?$/.test(id);
 };
-const format = (info) =>
+const format = (info: any) =>
   `${isVueSFC(info.name) ? info.name.replace(/\.([tj]sx)|(\.vue)?$/, ".js") : info.name}`;
 
 export default defineConfig({
   build: {
     rollupOptions: {
-      input: ["./src/components/index.ts"],
+      input: ["./index.ts"],
       external: ["vue"],
       output: [
         {
@@ -23,7 +23,7 @@ export default defineConfig({
           // 输出目录
           dir: "dist/es",
           // 指定保留模块结构的根目录
-          preserveModulesRoot: "src",
+          preserveModulesRoot: ".",
         },
         {
           exports: "named",
@@ -33,7 +33,7 @@ export default defineConfig({
           // 输出目录
           dir: "dist/lib",
           // 指定保留模块结构的根目录
-          preserveModulesRoot: "src",
+          preserveModulesRoot: ".",
         },
         {
           name: "momei",
@@ -50,7 +50,7 @@ export default defineConfig({
 
     lib: {
       name: "momei",
-      entry: ["./src/components/index.ts"],
+      entry: ["index.ts"],
       cssFileName: "momei-style",
     },
     minify: true,

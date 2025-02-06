@@ -5,39 +5,15 @@
   "description": "starter for lib&vite",
   "author": "momei",
   "license": "ISC",
-  "files": [
-    "dist",
-    "package.json"
-  ],
-  "types": "./dist/types/src/components/index.d.ts",
-  "exports": {
-    "./global": "./dist/global.d.ts",
-    ".": {
-      "types": "./dist/types/src/components/index.d.ts",
-      "import": "./dist/es/components/index.js",
-      "require": "./dist/lib/components/index.js",
-      "default": "./dist/es/components/index.js"
-    },
-    "./css": {
-      "types": "./dist/global.d.ts",
-      "import": "./dist/es/momei-style.css",
-      "require": "./dist/es/momei-style.css"
-    }
-  },
-  "main": "./dist/lib/components/index.js",
-  "module": "./dist/es/components/index.js",
   "scripts": {
     "dev": "pnpm -C playground dev",
     "build": "npx tsx ./build.ts",
-    "pub": "npm version patch && npm publish",
+    "build:dts": "vue-tsc --declaration --emitDeclarationOnly --declarationDir types",
+    "pub": "pnpm -C lib-starter-components npm version patch && npm publish",
     "prepublishOnly": "pnpm build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "build:dts": "vue-tsc --declaration --emitDeclarationOnly --declarationDir dist/types",
     "lint:fix": "eslint . --fix"
-  },
-  "peerDependencies": {
-    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.1.0",
@@ -58,5 +34,8 @@
     "vite": "^6.0.11",
     "vue": "^3.5.13",
     "vue-tsc": "^2.2.0"
+  },
+  "dependencies": {
+    "@types/babel__core": "^7.20.5"
   }
 }

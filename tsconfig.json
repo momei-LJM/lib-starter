@@ -6,12 +6,13 @@
     "lib": ["ESNext", "DOM"],
     "useDefineForClassFields": true,
     "rootDir": ".",
-    "declarationDir": "./dist/types",
+    "declarationDir": "types",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "paths": {
       "@/*": ["./src/*"]
     },
+    "skipLibCheck": true,
     "declaration": true,
     "emitDeclarationOnly": true,
     "resolveJsonModule": true,
@@ -25,6 +26,11 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src", "src/**/*.ts", "src/**/*.vue"],
+  "include": [
+    "packages",
+    "packages/**/*.ts",
+    "packages/**/*.vue",
+    "packages/components"
+  ],
   "exclude": ["node_modules"]
 }

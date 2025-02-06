@@ -1,0 +1,38 @@
+{
+  "name": "lib-starter-components",
+  "version": "1.0.0",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    "./global": "./dist/global.d.ts",
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/es/index.js",
+      "require": "./dist/lib/index.js",
+      "default": "./dist/es/index.js"
+    },
+    "./css": {
+      "types": "./dist/global.d.ts",
+      "import": "./dist/es/momei-style.css",
+      "require": "./dist/es/momei-style.css"
+    }
+  },
+  "main": "./dist/lib/index.js",
+  "module": "./dist/es/index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "author": "momei",
+  "license": "ISC",
+  "description": "",
+  "peerDependencies": {
+    "vue": "^3.5.13"
+  }
+}
