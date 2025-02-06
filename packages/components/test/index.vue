@@ -26,7 +26,7 @@ defineExpose({
   <div class="test">
     {{ value }}
   </div>
-  <div class="text-blue">测试unocss</div>
+  <div class="text-green">测试unocss</div>
   <span>{{ counter }}</span>
   <button @click="counter++">+</button>
 </template>

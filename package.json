@@ -9,8 +9,7 @@
     "dev": "pnpm -C packages/playground dev",
     "build": "npx tsx ./build.ts",
     "build:dts": "vue-tsc --declaration --emitDeclarationOnly --declarationDir types",
-    "pub": "pnpm -C packages/components && npm version patch && npm publish",
-    "prepublishOnly": "pnpm build",
+    "pub": "pnpm build && pnpm -C packages/components pub",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
