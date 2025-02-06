@@ -6,10 +6,10 @@
   "author": "momei",
   "license": "ISC",
   "scripts": {
-    "dev": "pnpm -C playground dev",
+    "dev": "pnpm -C packages/playground dev",
     "build": "npx tsx ./build.ts",
     "build:dts": "vue-tsc --declaration --emitDeclarationOnly --declarationDir types",
-    "pub": "pnpm -C lib-starter-components npm version patch && npm publish",
+    "pub": "pnpm -C packages/components && npm version patch && npm publish",
     "prepublishOnly": "pnpm build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",

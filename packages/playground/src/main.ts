@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import PlayComponents from "lib-starter-components";
+import PlayComponents from "../../components/index";
 import App from "./App.vue";
 import "./style.css";
 import "virtual:uno.css";
