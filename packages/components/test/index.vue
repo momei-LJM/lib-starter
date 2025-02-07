@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { reactive, ref } from "vue";
+import { getUserInfo } from "../api";
 interface TTT {
   name: string;
   age: number;
@@ -15,6 +16,15 @@ const data = reactive<TTT>({
 });
 const value = ref("这是测试");
 const counter = ref(0);
+
+const userInfo = ref();
+const initData = async () => {
+  const res = await getUserInfo();
+  userInfo.value = res;
+  console.log("fromComponents", res);
+};
+initData();
+
 defineExpose({
   data,
   value,
