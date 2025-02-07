@@ -37,16 +37,16 @@ export default defineConfig({
           // 指定保留模块结构的根目录
           preserveModulesRoot: ".",
         },
-        {
-          name: "momei",
-          format: "umd",
-          entryFileNames: "index.js",
-          globals: {
-            vue: "Vue",
-          },
-          // 输出目录
-          dir: "dist/umd",
-        },
+        // {
+        //   name: "momei",
+        //   format: "umd",
+        //   entryFileNames: "index.js",
+        //   globals: {
+        //     vue: "Vue",
+        //   },
+        //   // 输出目录
+        //   dir: "dist/umd",
+        // },
       ],
     },
 
