@@ -35,5 +35,12 @@
   "description": "",
   "peerDependencies": {
     "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "unplugin-auto-import": "^19.0.0",
+    "unplugin-vue-components": "^28.0.0"
+  },
+  "dependencies": {
+    "@hgj/element-plus": "^1.6.4"
   }
 }
