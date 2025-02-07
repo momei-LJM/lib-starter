@@ -94,6 +94,12 @@ importers:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.3)
     devDependencies:
+      '@types/qs':
+        specifier: ^6.9.18
+        version: 6.9.18
+      i:
+        specifier: ^0.3.7
+        version: 0.3.7
       unplugin-auto-import:
         specifier: ^19.0.0
         version: 19.0.0(@vueuse/core@8.9.4(vue@3.5.13(typescript@5.7.3)))(rollup@4.32.0)
@@ -1018,6 +1024,9 @@ packages:
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
+
+  '@types/qs@6.9.18':
+    resolution: {integrity: sha512-kK7dgTYDyGqS+e2Q4aK9X3D7q234CIZ1Bv0q/7Z5IwRDoADNU81xXJK/YVyLbLTZCoIwUoDoffFeF+p/eIklAA==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -1975,6 +1984,10 @@ packages:
   human-signals@8.0.0:
     resolution: {integrity: sha512-/1/GPCpDUCCYwlERiYjxoczfP0zfvZMU/OWgQPMya9AbAE24vseigFdhAMObpc8Q4lc/kjutPfUddDYyAmejnA==}
     engines: {node: '>=18.18.0'}
+
+  i@0.3.7:
+    resolution: {integrity: sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==}
+    engines: {node: '>=0.4'}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -3747,6 +3760,8 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
+  '@types/qs@6.9.18': {}
+
   '@types/unist@3.0.3': {}
 
   '@types/web-bluetooth@0.0.14': {}
@@ -4965,6 +4980,8 @@ snapshots:
   html-tags@3.3.1: {}
 
   human-signals@8.0.0: {}
+
+  i@0.3.7: {}
 
   ignore@5.3.2: {}
 

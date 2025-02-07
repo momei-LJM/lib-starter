@@ -11,8 +11,6 @@ export async function build() {
         overwrite: true,
       },
     );
-    console.log(2222, res);
-
     fs.copyFileSync("./global.d.ts", "packages/components/dist/global.d.ts");
   } catch (error) {
     console.error(error);
