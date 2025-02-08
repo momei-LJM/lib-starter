@@ -1,13 +1,14 @@
 {
   "name": "lib-starter-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "directories": {
     "test": "test"
   },
   "files": [
     "dist",
-    "package.json"
+    "package.json",
+    "README.md"
   ],
   "types": "./dist/types/index.d.ts",
   "exports": {
