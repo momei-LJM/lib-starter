@@ -51,9 +51,9 @@ export default defineConfig({
     },
 
     lib: {
-      name: "momei",
+      name: "spot-share",
       entry: ["index.ts"],
-      cssFileName: "momei-style",
+      cssFileName: "spot-share-style",
     },
     minify: true,
   },

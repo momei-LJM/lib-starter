@@ -1,6 +1,6 @@
 {
-  "name": "lib-starter-components",
-  "version": "1.0.8",
+  "name": "spot-share",
+  "version": "1.0.1",
   "type": "module",
   "directories": {
     "test": "test"
@@ -21,8 +21,8 @@
     },
     "./css": {
       "types": "./dist/global.d.ts",
-      "import": "./dist/es/momei-style.css",
-      "require": "./dist/es/momei-style.css"
+      "import": "./dist/es/spot-share-style.css",
+      "require": "./dist/es/spot-share-style.css"
     }
   },
   "main": "./dist/lib/index.js",
@@ -31,7 +31,7 @@
     "build": "vite build",
     "pub": "npm version patch && npm publish"
   },
-  "author": "momei",
+  "author": "momei.lu",
   "license": "ISC",
   "description": "",
   "peerDependencies": {

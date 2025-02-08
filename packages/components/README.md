@@ -1,8 +1,8 @@
 # setup
 
 ```typescript
-import "lib-starter-components/css"; //引入css
-import PlayComponents, { setupHttp } from "lib-starter-components";
+import "spot-share/css"; //引入css
+import PlayComponents, { setupHttp } from "spot-share";
 
 // 注册组件
 app.use(PlayComponents);
